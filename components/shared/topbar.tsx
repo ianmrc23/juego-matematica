@@ -6,10 +6,16 @@ const Topbar = () => {
   return (
     <header>
       <nav className="flex justify-between items-center">
-        <div className="rounded-sm">
-          <Image alt="avatar"  src={"/public/assest/nelson.jpeg"} width={20} height={20} />
+        <div className="flex justify-between items-center gap-2">
+          <Image
+            className="rounded-full"
+            alt="avatar"
+            src={"/assets/nelson.jpeg"}
+            width={50}
+            height={50}
+          />
+          <h1>Nelson la rata de alcantarilla PortFolio</h1>
         </div>
-        <h1>Nelson la rata de alcantarilla PortFolio</h1>
         <ModeToggle />
       </nav>
     </header>
