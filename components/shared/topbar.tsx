@@ -1,6 +1,8 @@
 import React from "react";
 import { ModeToggle } from "../theme-toggle-button";
 import Image from "next/image";
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
 
 const Topbar = () => {
   return (
@@ -16,7 +18,16 @@ const Topbar = () => {
           />
           <h1>Nelson la rata de alcantarilla PortFolio</h1>
         </div>
-        <ModeToggle />
+
+        <div className="flex gap-2 items-center">
+          <Link
+            href={"/new"}
+            className={buttonVariants({ variant: "secondary" })}
+          >
+            Create Execercise
+          </Link>
+          <ModeToggle />
+        </div>
       </nav>
     </header>
   );
